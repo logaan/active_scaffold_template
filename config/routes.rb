@@ -1,5 +1,10 @@
 AsTemplate2::Application.routes.draw do
-  devise_for :admins
+  namespace :admin do
+    devise_for :admins
+    resources :admins do
+      as_routes
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

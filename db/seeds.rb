@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+unless Admin.find_by_email "colin@logaan.net"
+  Admin.create :email => "colin@logaan.net",
+               :password => "password",
+               :password_confirmation => "password" 
+end
+

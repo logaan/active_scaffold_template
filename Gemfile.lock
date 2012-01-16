@@ -17,6 +17,9 @@ GEM
       sprockets (~> 2.0.2)
     active_scaffold (3.1.14)
       rails (~> 3.1.0)
+    active_scaffold_vho (3.1.1)
+      rails (~> 3.1.0)
+      render_component_vho
     activemodel (3.1.1)
       activesupport (= 3.1.1)
       builder (~> 3.0.0)
@@ -51,7 +54,7 @@ GEM
       multi_json (~> 1.0)
     hike (1.2.1)
     i18n (0.6.0)
-    jquery-rails (1.0.19)
+    jquery-rails_vho (0.0.3)
       railties (~> 3.0)
       thor (~> 0.14)
     json (1.6.5)
@@ -90,6 +93,8 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    render_component_vho (3.1.1)
+      railties (~> 3.1.0)
     sass (3.1.12)
     sass-rails (3.1.5)
       actionpack (~> 3.1.0)
@@ -120,10 +125,12 @@ PLATFORMS
 
 DEPENDENCIES
   active_scaffold
+  active_scaffold_vho
   coffee-rails (~> 3.1.1)
   devise
-  jquery-rails
+  jquery-rails_vho
   rails (= 3.1.1)
+  render_component_vho
   sass-rails (~> 3.1.4)
   sqlite3
   turn
