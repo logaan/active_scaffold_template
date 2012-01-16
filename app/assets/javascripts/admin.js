@@ -8,3 +8,4 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require active_scaffold
+//= require tinymce-jquery

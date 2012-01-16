@@ -8,6 +8,7 @@ gem 'rails', '3.1.1'
 gem 'sqlite3'
 
 gem 'active_scaffold'
+gem 'tinymce-rails'
 
 gem 'devise'
 
