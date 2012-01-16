@@ -1,10 +1,12 @@
 AsTemplate2::Application.routes.draw do
   namespace :admin do
-    devise_for :admins
+    devise_for :admins, :sign_out_via => [ :get ]
     resources :admins do
       as_routes
     end
   end
+
+  root :to => "admin/admins#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

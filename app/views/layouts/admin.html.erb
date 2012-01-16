@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin area</title>
+  <%= stylesheet_link_tag    "admin" %>
+  <%= javascript_include_tag "admin" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div id="navigation">
+    <h2>Navigation</h2>
+    <ul>
+      <li><%= link_to "Admin Users", admin_admins_path %></li>
+      <li><%= link_to "Sign out", destroy_admin_admin_session_path %></li>
+    </ul>
+  </div>
+
+  <div id="crud">
+    <%= yield %>
+  </div>
+
+</body>
+</html>
