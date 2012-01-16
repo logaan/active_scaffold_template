@@ -1,6 +1,9 @@
 AsTemplate2::Application.routes.draw do
   namespace :admin do
+    root :to => "admins#index"
+
     devise_for :admins, :sign_out_via => [ :get ]
+
     resources :admins do
       as_routes
     end
