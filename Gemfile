@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 gem 'active_scaffold'
 gem 'tinymce-rails'
+gem 'paperclip'
 
 gem 'devise'
 
